@@ -408,10 +408,10 @@ section{padding:clamp(56px,6vw,104px) 0}
 
 /* ============ CAROSELLO CONTINUO ============ */
 .marquee{overflow:hidden;position:relative;width:100%}
-.marquee-track{display:flex;gap:24px;width:max-content;animation:slide 32s linear infinite}
+.marquee-track{display:flex;gap:24px;width:max-content;animation:slide 32s linear infinite;will-change:transform}
 .marquee:hover .marquee-track,.marquee:focus-within .marquee-track{animation-play-state:paused}
 @keyframes slide{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 12px))}}
-.marquee .acard{flex:0 0 clamp(300px,calc((100% - 48px)/3),480px);min-height:clamp(320px,25vw,400px);padding:clamp(28px,2.3vw,40px)}
+.marquee .acard{flex:0 0 clamp(300px,26vw,480px);min-height:clamp(320px,25vw,400px);padding:clamp(28px,2.3vw,40px)}
 .marquee .acard h3{font-size:clamp(24px,1.9vw,32px)}
 .car-nav{display:none}
 @media (prefers-reduced-motion:reduce){.marquee-track{animation:none}}
@@ -653,6 +653,15 @@ a.news-item:hover{border-color:var(--accent);transform:translateY(-3px);box-shad
             </ul>
             <span class="tag">Supporto continuativo</span>
           </a>
+          <a class="acard" href="area-payroll.html">
+            <h3>Gestione paghe e contributi</h3>
+            <ul>
+              <li>Elaborazione di buste paga e cedolini</li>
+              <li>Adempimenti previdenziali e contributivi</li>
+              <li>Assunzioni, cessazioni e gestione del TFR</li>
+            </ul>
+            <span class="tag">HR e payroll per aziende e studi</span>
+          </a>
         
           <a class="acard" href="area-bilancio.html">
             <h3>Bilancio, contabilità e revisione</h3>
@@ -697,6 +706,15 @@ a.news-item:hover{border-color:var(--accent);transform:translateY(-3px);box-shad
               <li>Internal auditing</li>
             </ul>
             <span class="tag">Supporto continuativo</span>
+          </a>
+          <a class="acard" href="area-payroll.html">
+            <h3>Gestione paghe e contributi</h3>
+            <ul>
+              <li>Elaborazione di buste paga e cedolini</li>
+              <li>Adempimenti previdenziali e contributivi</li>
+              <li>Assunzioni, cessazioni e gestione del TFR</li>
+            </ul>
+            <span class="tag">HR e payroll per aziende e studi</span>
           </a>
         </div></div>
       </div>
